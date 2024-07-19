@@ -1,0 +1,43 @@
+{
+  "name": "@k03mad/actual-versions",
+  "version": "1.0.0",
+  "description": "Get tool actual version string",
+  "maintainers": [
+    "Kirill Molchanov <k03.mad@gmail.com"
+  ],
+  "bin": {
+    "acver": "app/cli.js"
+  },
+  "main": "app/api.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k03mad/ip2geo.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@k03mad/request": "5.8.1",
+    "@k03mad/simple-log": "2.2.1",
+    "chalk": "5.3.0",
+    "table": "6.8.2"
+  },
+  "devDependencies": {
+    "@k03mad/eslint-config": "22.5.0",
+    "eslint": "8.57.0",
+    "husky": "9.1.1",
+    "npm-run-all": "4.1.5",
+    "strip-ansi": "7.1.0"
+  },
+  "scripts": {
+    "lint": "npm run lint:eslint",
+    "lint:eslint": "eslint ./ --cache",
+    "test": "node --test-force-exit --test tests/**.js",
+    "clean": "rm -rf ./node_modules .eslintcache || true",
+    "setup": "npm run clean && npm run setup:pnpm",
+    "setup:pnpm": "npm i pnpm -g && pnpm i",
+    "prepare": "husky || true"
+  }
+}
