@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import cp from 'node:child_process';
-import {describe, it} from 'node:test';
+import {before, describe, it} from 'node:test';
 import {promisify} from 'node:util';
 
 import stripAnsi from 'strip-ansi';
@@ -23,7 +23,7 @@ const tableBorderCharsRe = new RegExp(tableBorderChars.join('|'), 'g');
 describe('cli', () => {
     let versions;
 
-    it('save stdout', async () => {
+    before(async () => {
         const {stdout} = await exec(cliFile);
 
         versions = stdout
