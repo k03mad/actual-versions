@@ -3,7 +3,7 @@
 ## CLI
 
 ```bash
-npm i @k03mad/acver -g
+npm i @k03mad/actual-versions -g
 acver
 # ╔════════╤════════════════╗
 # ║ aria   │ 1.37.0         ║
@@ -17,7 +17,7 @@ acver
 ## API
 
 ```bash
-npm i @k03mad/acver
+npm i @k03mad/actual-versions
 ```
 
 ```js
@@ -25,7 +25,7 @@ import {
     getAriaVersion
     getChromeVersion,
     getCurlVersion
-} from '@k03mad/acver';
+} from '@k03mad/actual-versions';
 
 const ariaVersion = await getAriaVersion();
 // '1.37.0'
