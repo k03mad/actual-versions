@@ -34,7 +34,7 @@
   "scripts": {
     "lint": "npm run lint:eslint",
     "lint:eslint": "eslint ./ --cache",
-    "test": "node --test-force-exit --test tests/**.js",
+    "test": "node --test tests/**.js",
     "clean": "rm -rf ./node_modules .eslintcache || true",
     "setup": "npm run clean && npm run setup:pnpm",
     "setup:pnpm": "npm i pnpm -g && pnpm i",
