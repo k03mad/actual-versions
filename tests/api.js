@@ -12,12 +12,12 @@ const TESTS = {
 describe('api', () => {
     const steps = Object.entries(TESTS);
 
-    it('coverage', () => {
+    it('check tests count', () => {
         assert.equal(steps.length, Object.keys(api).length);
     });
 
     Object.entries(TESTS).forEach(([key, value]) => {
-        it(key, async () => {
+        it(`check fn output: ${key}()`, async () => {
             const version = await api[key]();
             assert.match(version, value);
         });

@@ -2,7 +2,9 @@
 
 import {log} from '@k03mad/simple-log';
 import chalk from 'chalk';
-import {table} from 'table';
+import {getBorderCharacters, table} from 'table';
+
+import config from '../config.js';
 
 import * as api from './api.js';
 
@@ -22,4 +24,8 @@ const output = await Promise.all(
     }),
 );
 
-log(table(output));
+const formattedTable = table(output, {
+    border: getBorderCharacters(config.table.border),
+});
+
+log(formattedTable);
