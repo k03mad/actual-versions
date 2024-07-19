@@ -39,7 +39,8 @@ describe('cli', () => {
         assert.equal(TESTS.length, versions.length);
     });
 
-    TESTS.forEach((re, i) => {
-        it(`check stdout output: #${i + 1} tool: ${String(re)}`, () => assert.match(versions[i], re));
-    });
+    TESTS.forEach((re, i) => it(
+        `check stdout output: #${i + 1} tool: ${String(re)}`,
+        () => assert.match(versions[i], re),
+    ));
 });
