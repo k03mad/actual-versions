@@ -1,6 +1,6 @@
 # Get tool actual version string
 
-## Global
+## CLI
 
 ```bash
 npm i @k03mad/acver -g
