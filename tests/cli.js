@@ -11,14 +11,16 @@ import config from '../config.js';
 const cliFile = process.env.npm_package_bin_acver;
 const exec = promisify(cp.exec);
 
-const TESTS = [
-    /^aria\s+\d\.\d+\.\d$/,
-    /^chrome\s+\d{3}(\.\d+){3}$/,
-    /^curl\s+\d{1,2}\.\d+\.\d$/,
-];
-
 const tableBorderChars = Object.values(getBorderCharacters(config.table.border));
 const tableBorderCharsRe = new RegExp(tableBorderChars.join('|'), 'g');
+
+const STDOUT_TOOLS = [
+    'aria',
+    'chrome',
+    'curl',
+];
+
+const versionRe = tool => new RegExp(`^${tool}\\s+${config.version.re}`);
 
 describe('cli', () => {
     let versions;
@@ -36,11 +38,12 @@ describe('cli', () => {
     });
 
     it('check tests count', () => {
-        assert.equal(TESTS.length, versions.length);
+        assert.equal(STDOUT_TOOLS.length, versions.length);
     });
 
-    TESTS.forEach((re, i) => it(
-        `check stdout output: #${i + 1} tool: ${String(re)}`,
-        () => assert.match(versions[i], re),
-    ));
+    STDOUT_TOOLS.forEach((tool, i) => {
+        it(`check stdout output: #${i + 1} tool: ${tool}`, () => {
+            assert.match(versions[i], versionRe(tool));
+        });
+    });
 });
