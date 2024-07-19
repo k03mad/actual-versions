@@ -6,7 +6,7 @@ import {table} from 'table';
 
 import * as api from './api.js';
 
-const {blue, bold, green} = chalk;
+const {blue, bold, green, red} = chalk;
 
 const TOOL_NAME_RE = /get(.+)Version/;
 
@@ -17,7 +17,7 @@ const output = await Promise.all(
 
         return [
             blue(bold(tool)),
-            green(version),
+            version ? green(version) : red('———'),
         ];
     }),
 );

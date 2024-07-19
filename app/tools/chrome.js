@@ -7,5 +7,5 @@ const CHROME_VERSIONS_URL = 'https://googlechromelabs.github.io/chrome-for-testi
  */
 export default async () => {
     const {body} = await requestCache(CHROME_VERSIONS_URL);
-    return body.channels.Stable.version;
+    return body?.channels?.Stable?.version;
 };

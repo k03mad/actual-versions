@@ -8,5 +8,5 @@ const CURL_VERSION_RE = /href="\/download\/curl-([\d.]+).tar.gz"/;
  */
 export default async () => {
     const {body} = await requestCache(CURL_VERSIONS_URL);
-    return body.match(CURL_VERSION_RE)[1];
+    return body.match(CURL_VERSION_RE)?.[1];
 };

@@ -8,5 +8,5 @@ const ARIA_VERSION_RE = /href=".+\/releases\/tag\/release-([\d.]+)"/;
  */
 export default async () => {
     const {body} = await requestCache(ARIA_VERSIONS_URL);
-    return body.match(ARIA_VERSION_RE)[1];
+    return body.match(ARIA_VERSION_RE)?.[1];
 };
