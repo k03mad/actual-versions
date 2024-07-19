@@ -13,8 +13,8 @@ const exec = promisify(cp.exec);
 
 const TESTS = [
     /^aria\s+\d\.\d+\.\d$/,
-    /^chrome\s+\d{3}(?:\.\d+){3}$/,
-    /^curl\s+\d\.\d\.\d$/,
+    /^chrome\s+\d{3}(\.\d+){3}$/,
+    /^curl\s+\d{1,2}\.\d+\.\d$/,
 ];
 
 const tableBorderChars = Object.values(getBorderCharacters(config.table.border));
