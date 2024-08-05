@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@k03mad/request':
-        specifier: 6.0.4
-        version: 6.0.4
+        specifier: 6.1.0
+        version: 6.1.0
       '@k03mad/simple-log':
         specifier: 2.3.0
         version: 2.3.0
@@ -90,8 +90,8 @@ packages:
     resolution: {integrity: sha512-XUY1KpSFmVwPwlJxdkAssrEmdAJyDFbSGx6Xlwk8wGX4cnsiCZqqjdVVhFwioKP1fWgbB4/wYadfx8svwkPgzA==}
     engines: {node: '>=20'}
 
-  '@k03mad/request@6.0.4':
-    resolution: {integrity: sha512-5IvQvCVx9JTxyaEK9xyvBWkHJ6yREnT0l/Fm81HIi7Yurcj8F/Xn9iZpLVuLyGT0/q4tSPsb2FyR0gs9e1FXwA==}
+  '@k03mad/request@6.1.0':
+    resolution: {integrity: sha512-dl2h3XhAnt96SktmioJVgA6FSzIkFfdNIrd3PSNNStWy9Okb0kSJTb1PRkM7j+FBUN3BIXlqDJzxpGtCXeLXYw==}
     engines: {node: '>=20'}
 
   '@k03mad/simple-date@1.2.0':
@@ -1615,7 +1615,7 @@ snapshots:
       - typescript
       - vue-eslint-parser
 
-  '@k03mad/request@6.0.4':
+  '@k03mad/request@6.1.0':
     dependencies:
       chalk: 5.3.0
       debug: 4.3.6
