@@ -18,6 +18,7 @@ const STDOUT_TOOLS = [
     'aria',
     'chrome',
     'curl',
+    'nodejs',
 ];
 
 const versionRe = tool => new RegExp(`^${tool}\\s+${config.version.re}`);

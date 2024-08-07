@@ -8,6 +8,7 @@ const API_FUNCTIONS = [
     'getAriaVersion',
     'getChromeVersion',
     'getCurlVersion',
+    'getNodeJsVersion',
 ];
 
 const versionRe = new RegExp(`^${config.version.re}`);
