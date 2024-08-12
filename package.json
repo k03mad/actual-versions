@@ -11,7 +11,7 @@
   "main": "app/api.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/k03mad/ip2geo.git"
+    "url": "git+https://github.com/k03mad/actual-versions.git"
   },
   "license": "MIT",
   "type": "module",
