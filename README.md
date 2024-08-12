@@ -1,17 +1,19 @@
-# Get tool actual version string
+# Get actual versions of some tools
 
 ## CLI
 
 ```bash
 npm i @k03mad/actual-versions -g
 acver
-# ╔════════╤════════════════╗
-# ║ aria   │ 1.37.0         ║
-# ╟────────┼────────────────╢
-# ║ chrome │ 126.0.6478.182 ║
-# ╟────────┼────────────────╢
-# ║ curl   │ 8.8.0          ║
-# ╚════════╧════════════════╝
+# ╔════════╤═══════════════╗
+# ║ aria   │ 1.37.0        ║
+# ╟────────┼───────────────╢
+# ║ chrome │ 127.0.6533.99 ║
+# ╟────────┼───────────────╢
+# ║ curl   │ 8.9.1         ║
+# ╟────────┼───────────────╢
+# ║ nodejs │ 22.6.0        ║
+# ╚════════╧═══════════════╝
 ```
 
 ## API
@@ -24,7 +26,8 @@ npm i @k03mad/actual-versions
 import {
     getAriaVersion
     getChromeVersion,
-    getCurlVersion
+    getCurlVersion,
+    getNodeJsVersion,
 } from '@k03mad/actual-versions';
 
 const ariaVersion = await getAriaVersion();
@@ -35,4 +38,7 @@ const chromeVersion = await getChromeVersion();
 
 const curlVersion = await getCurlVersion();
 // '8.8.0'
+
+const nodeJsVersion = await getNodeJsVersion();
+// '22.6.0'
 ```
