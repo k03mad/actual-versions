@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/actual-versions",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Get actual versions of some tools",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
@@ -19,14 +19,14 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@k03mad/request": "6.4.0",
-    "@k03mad/simple-log": "4.2.0",
+    "@k03mad/request": "7.0.0",
+    "@k03mad/simple-log": "5.0.0",
     "chalk": "5.3.0",
     "table": "6.8.2"
   },
   "devDependencies": {
-    "@k03mad/eslint-config": "25.6.4",
-    "eslint": "8.57.1",
+    "@k03mad/eslint-config": "26.1.0",
+    "eslint": "9.15.0",
     "husky": "9.1.6",
     "npm-run-all": "4.1.5",
     "strip-ansi": "7.1.0"
