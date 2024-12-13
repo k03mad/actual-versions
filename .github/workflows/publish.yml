@@ -15,20 +15,20 @@ jobs:
           fetch-depth: 0
 
       - uses: EndBug/version-check@v2
-        id: check
+        id: check_pkg_version
         with:
           diff-search: true
 
-      - if: steps.check.outputs.changed == 'true'
+      - if: steps.check_pkg_version.outputs.changed == 'true'
         uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
           registry-url: 'https://registry.npmjs.org'
 
-      - if: steps.check.outputs.changed == 'true'
+      - if: steps.check_pkg_version.outputs.changed == 'true'
         run: npm run setup
 
-      - if: steps.check.outputs.changed == 'true'
+      - if: steps.check_pkg_version.outputs.changed == 'true'
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
