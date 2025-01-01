@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/actual-versions",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Get actual versions of some tools",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
@@ -19,7 +19,7 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@k03mad/request": "7.6.0",
+    "@k03mad/request": "7.6.2",
     "@k03mad/simple-log": "5.2.0",
     "chalk": "5.4.1",
     "table": "6.9.0"
