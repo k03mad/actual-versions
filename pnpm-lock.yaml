@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@k03mad/request':
-        specifier: 7.7.0
-        version: 7.7.0
+        specifier: 7.8.0
+        version: 7.8.0
       '@k03mad/simple-log':
         specifier: 5.2.1
         version: 5.2.1
@@ -109,8 +109,8 @@ packages:
     resolution: {integrity: sha512-HGaRSeC2iNnWl4IRZGqmLAp569r+ZwVdltDBfdUUoVxyUCun3+LppnO3RW+fKrDIrR4eQY6RO9OZK46jbPxOPQ==}
     engines: {node: '>=22'}
 
-  '@k03mad/request@7.7.0':
-    resolution: {integrity: sha512-li60dQR3T9mQEZpEXqqHdvtDtLhrypYhL2WFtH7c5hAMc5Um6/rn1fKD2asjGipu9PN/oOw5xmAeepoVhP2HAA==}
+  '@k03mad/request@7.8.0':
+    resolution: {integrity: sha512-c8juMUYv5tHw6olag92Ka1ak8qKvSwSNzXNsPMB3fEFEFZb/GkZNHeGb7hCZCVG9/f8Eiuh2MHeb2kjUJaEN8w==}
     engines: {node: '>=22'}
 
   '@k03mad/simple-date@4.2.1':
@@ -982,8 +982,8 @@ packages:
     resolution: {integrity: sha512-mxLDbbGIBEXTJL0zEx8JIylaj3xQ7Z/7eEVjcF9fJX4DBiH9oqe+oahYnlKKxm0Ci9TlWTyhSHgygxMxjIB2jw==}
     engines: {node: '>=18'}
 
-  p-timeout@6.1.2:
-    resolution: {integrity: sha512-UbD77BuZ9Bc9aABo74gfXhNvzC9Tx7SxtHSh1fxvx3jTLLYvmVhiQZZrJzqqU0jKbN32kb5VOKiLEQI/3bIjgQ==}
+  p-timeout@6.1.4:
+    resolution: {integrity: sha512-MyIV3ZA/PmyBN/ud8vV9XzwTrNtR4jFrObymZYnZqMmW0zA8Z17vnT0rBgFE/TlohB+YCHqXMgZzb3Csp49vqg==}
     engines: {node: '>=14.16'}
 
   p-try@2.2.0:
@@ -1303,8 +1303,8 @@ packages:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
 
-  type-fest@4.27.0:
-    resolution: {integrity: sha512-3IMSWgP7C5KSQqmo1wjhKrwsvXAtF33jO3QY+Uy++ia7hqvgSK6iXbbg5PbDBc1P2ZbNEDgejOrN4YooXvhwCw==}
+  type-fest@4.36.0:
+    resolution: {integrity: sha512-3T/PUdKTCnkUmhQU6FFJEHsLwadsRegktX3TNHk+2JJB9HlA8gp1/VXblXVDI93kSnXF2rdPx0GMbHtJIV2LPg==}
     engines: {node: '>=16'}
 
   typed-array-buffer@1.0.2:
@@ -1456,7 +1456,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@k03mad/request@7.7.0':
+  '@k03mad/request@7.8.0':
     dependencies:
       chalk: 5.4.1
       debug: 4.4.0
@@ -2160,7 +2160,7 @@ snapshots:
       lowercase-keys: 3.0.0
       p-cancelable: 4.0.1
       responselike: 3.0.0
-      type-fest: 4.27.0
+      type-fest: 4.36.0
 
   graceful-fs@4.2.11: {}
 
@@ -2446,9 +2446,9 @@ snapshots:
   p-queue@8.1.0:
     dependencies:
       eventemitter3: 5.0.1
-      p-timeout: 6.1.2
+      p-timeout: 6.1.4
 
-  p-timeout@6.1.2: {}
+  p-timeout@6.1.4: {}
 
   p-try@2.2.0: {}
 
@@ -2760,7 +2760,7 @@ snapshots:
 
   type-fest@0.8.1: {}
 
-  type-fest@4.27.0: {}
+  type-fest@4.36.0: {}
 
   typed-array-buffer@1.0.2:
     dependencies:
