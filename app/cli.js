@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import {log, logError} from '@k03mad/simple-log';
 import chalk from 'chalk';
 import {getBorderCharacters, table} from 'table';
 
@@ -23,7 +22,7 @@ const output = await Promise.all(
                 version ? green(version) : red('———'),
             ];
         } catch (err) {
-            logError([key, err]);
+            console.log(`[${key}] ${err}`);
         }
     }),
 );
@@ -32,4 +31,4 @@ const formattedTable = table(output.filter(Boolean), {
     border: getBorderCharacters(config.table.border),
 });
 
-log(formattedTable);
+console.log(formattedTable);
