@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/actual-versions",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Get actual versions of some tools",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
@@ -32,7 +32,7 @@
   "scripts": {
     "lint": "npm run lint:eslint",
     "lint:eslint": "eslint ./ --cache",
-    "test": "node --test tests/**.js",
+    "test": "node --test tests/*.js",
     "clean": "rm -rf ./node_modules .eslintcache || true",
     "setup": "npm run clean && npm run setup:pnpm",
     "setup:pnpm": "npm i pnpm -g && pnpm i",

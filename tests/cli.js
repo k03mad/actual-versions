@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict';
 import cp from 'node:child_process';
+import fs from 'node:fs/promises';
+import path from 'node:path';
 import {before, describe, it} from 'node:test';
 import {promisify} from 'node:util';
 
@@ -14,14 +16,10 @@ const exec = promisify(cp.exec);
 const tableBorderChars = Object.values(getBorderCharacters(config.table.border));
 const tableBorderCharsRe = new RegExp(tableBorderChars.join('|'), 'g');
 
-const STDOUT_TOOLS = [
-    'aria',
-    'chrome',
-    'curl',
-    'nodejs',
-];
-
 const versionRe = tool => new RegExp(`^${tool}\\s+${config.version.re}`);
+
+const dir = await fs.readdir('./app/tools');
+const tools = dir.map(elem => path.basename(elem, '.js'));
 
 describe('cli', () => {
     let versions;
@@ -38,11 +36,11 @@ describe('cli', () => {
             .filter(Boolean);
     });
 
-    it('check tests count', () => {
-        assert.equal(STDOUT_TOOLS.length, versions.length);
+    it('check tools count', () => {
+        assert.equal(tools.length, versions.length);
     });
 
-    STDOUT_TOOLS.forEach((tool, i) => {
+    tools.forEach((tool, i) => {
         it(`check stdout output: #${i + 1} tool: ${tool}`, () => {
             assert.match(versions[i], versionRe(tool));
         });
