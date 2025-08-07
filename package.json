@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/actual-versions",
-  "version": "3.10.0",
+  "version": "3.11.0",
   "description": "Get actual versions of some tools",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
