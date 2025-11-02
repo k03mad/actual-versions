@@ -16,7 +16,7 @@ const exec = promisify(cp.exec);
 const tableBorderChars = Object.values(getBorderCharacters(config.table.border));
 const tableBorderCharsRe = new RegExp(tableBorderChars.join('|'), 'g');
 
-const versionRe = tool => new RegExp(`^${tool}\\s+${config.version.re}`);
+const versionRe = tool => new RegExp(String.raw`^${tool}\s+${config.version.re}`);
 
 const dir = await fs.readdir('./app/tools');
 const tools = dir.map(elem => path.basename(elem, '.js'));
