@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/actual-versions",
-  "version": "3.14.2",
+  "version": "3.14.3",
   "description": "Get actual versions of some tools",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
@@ -23,8 +23,8 @@
     "table": "6.9.0"
   },
   "devDependencies": {
-    "@k03mad/eslint-config": "29.13.2",
-    "eslint": "9.36.0",
+    "@k03mad/eslint-config": "29.13.3",
+    "eslint": "9.39.0",
     "husky": "9.1.7",
     "npm-run-all": "4.1.5",
     "strip-ansi": "7.1.2"
