@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/actual-versions",
-  "version": "3.16.0",
+  "version": "4.0.0",
   "description": "Get actual versions of some tools",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
@@ -16,7 +16,7 @@
   "license": "MIT",
   "type": "module",
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
   "dependencies": {
     "chalk": "5.6.2",
