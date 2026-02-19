@@ -1,6 +1,3 @@
 {
-    "cSpell.words": [
-        "acver",
-        "nvmrc"
-    ]
+  "cSpell.words": ["acver", "nvmrc", "oxfmt", "oxlint", "oxlintrc"]
 }

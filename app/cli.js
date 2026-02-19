@@ -17,10 +17,7 @@ const output = await Promise.all(
             const version = await value();
             const tool = key.match(TOOL_NAME_RE)[1].toLowerCase();
 
-            return [
-                blue(bold(tool)),
-                version ? green(version) : red('———'),
-            ];
+            return [blue(bold(tool)), version ? green(version) : red('———')];
         } catch (err) {
             console.log(`[${key}] ${err}`);
         }

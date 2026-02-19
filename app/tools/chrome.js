@@ -1,4 +1,5 @@
-const CHROME_VERSIONS_URL = 'https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json';
+const CHROME_VERSIONS_URL =
+    'https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json';
 
 /**
  * @returns {Promise<string>}

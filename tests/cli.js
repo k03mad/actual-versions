@@ -29,10 +29,7 @@ describe('cli', () => {
 
         versions = stdout
             .split('\n')
-            .map(elem => stripAnsi(elem)
-                .replaceAll(tableBorderCharsRe, '')
-                .trim(),
-            )
+            .map(elem => stripAnsi(elem).replaceAll(tableBorderCharsRe, '').trim())
             .filter(Boolean);
     });
 
